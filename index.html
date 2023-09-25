@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual seu mood?</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="tudo">
+<div class="info">
+    <h2><strong>Conte-me tudo!</strong></h2>
+    <input type="text" placeholder="Informe seu nome" id="nome"></input>
+    <input type="text" placeholder="Qual o mood de hoje?" id="mood"></input>
+    <button onclick="exibirMensagem()">Enviar</button>
+</div>
+
+<div class="user">
+        <p id="resposta"></p>
+</div>
+    </div>
+
+<script>
+
+function exibirMensagem() {
+    const  nome  = document.getElementById("nome").value;
+    const mood = document.getElementById("mood").value;
+    const resposta = document.getElementById("resposta");
+    if (nome && mood) {
+        resposta.textContent = `Oie, ${nome}!, você parece estar mesmo ${mood} hoje.`;
+    }
+}
+   
+</script>
+</body>
+</html>

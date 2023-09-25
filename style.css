@@ -1,0 +1,41 @@
+.tudo{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 500px;
+    background-color: antiquewhite;
+}
+
+.tudo{
+    display:flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    width: 800px;
+    gap: 60px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content:center;
+    width: 200px;
+    background-color: azure;
+}
+
+.user{
+    width: 300px;
+    height: 200px;
+    border-style: solid;
+    border-width: 2px;
+    background-color: aliceblue;
+}
+
+.resposta{
+    color: black;
+    font-size: larger;
+}
